@@ -25,7 +25,7 @@
       右侧灰白色建筑<br>
       底部街道+黄色小车
       <br><br>
-      <img src="show/image57.png" alt="目标参考图" width="180" style="border-radius: 4px;">
+      <img src="show/image55.png" alt="目标参考图" width="180" style="border-radius: 4px;">
       <br>
       <small>目标参考图</small>
     </td>
