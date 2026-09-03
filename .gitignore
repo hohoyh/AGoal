@@ -1,0 +1,62 @@
+# ============ Python ============
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ============ 虚拟环境 ============
+.venv/
+venv/
+env/
+ENV/
+
+# ============ 模型权重（体积大，用 scripts/download_models.sh 获取）============
+*.pth
+*.pt
+*.pkl
+*.ckpt
+*.safetensors
+
+# ============ 数据与场景（不入库，README 提供下载方式）============
+# 注意用 data/* 而不是 data/，否则 git 不会进入目录，!data/.gitkeep 也就失效
+data/*
+!data/.gitkeep
+third_party/
+
+# ============ 运行产物 ============
+outputs/
+maps/
+debug/
+runs/
+*.log
+*.mp4
+*.avi
+
+# ============ 密钥与本地配置 ============
+.env
+*.env
+secrets.yaml
+configs/local_*.yaml
+
+# ============ 编辑器 / 系统 ============
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db

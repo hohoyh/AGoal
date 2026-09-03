@@ -1,0 +1,89 @@
+seed: 1
+total_num_scenes: 36
+num_processes: 1
+#找到物品数
+num_eval_episodes: 1000
+cuda: true
+sim_gpu_id: 1
+log_interval: 10
+save_interval: 1
+dump_location: "./outputs/experiments/"
+experiment_id: "experiment_0"
+save_periodic: 50000
+visualize: 1
+environment: "airsim"
+env_frame_width: 640
+env_frame_height: 480
+frame_width: 160
+frame_height: 120
+max_episode_length: 1000
+task_config: "tasks/instance_imagenav.yaml"
+text_goal_dataset: "data/datasets/textnav/val/val_text.json.gz"
+split: "val"
+camera_height: 1.5
+hfov: 90
+turn_angle: 30
+min_depth: 0.00
+max_depth: 30.0
+success_dist: 1.0
+floor_thr: 50
+min_d: 1.5
+max_d: 100.0
+version: "v3"
+lr: 2.5e-5
+global_hidden_size: 256
+eps: 1.0e-5
+alpha: 0.99
+gamma: 0.99
+use_gae: false
+tau: 0.95
+entropy_coef: 0.001
+value_loss_coef: 0.5
+max_grad_norm: 0.5
+num_global_steps: 20
+ppo_epoch: 4
+num_mini_batch: 1
+clip_param: 0.2
+use_recurrent_global: 0
+num_local_steps: 5
+reward_coeff: 0.1
+intrinsic_rew_coeff: 0.02
+sem_pred_prob_thr: 0.50
+global_downscaling: 3
+vision_range: 50
+du_scale: 4
+cat_pred_threshold: 5.0
+map_pred_threshold: 1.0
+exp_pred_threshold: 1.0
+collision_threshold: 0.20
+kernel_size: 91
+low_dense: 8
+succeed_match_points: 200
+big_enough_f: 0.16666666666666666
+big_enough_thresh: 4
+turn_angle: 15
+
+drone_altitude: 5          # 飞行高度（米）
+drone_speed: 2              # 移动速度（m/s）
+# map
+num_sem_categories: 16
+map_size_cm: 10000
+map_resolution: 10
+
+# LLM and VLM
+
+#llm_model: "llama3.2-vision"
+#vlm_model: "llama3.2-vision"
+#api_key: "ollama"
+#base_url: "http://localhost:11434/v1/"
+
+llm_model: "gpt-4o-mini"
+vlm_model: "gpt-4o-mini"
+
+# 不要在此处填写真实密钥。留空时代码会自动读取环境变量 OPENAI_API_KEY。
+#   Windows PowerShell : $env:OPENAI_API_KEY="sk-xxxx"
+#   Linux / macOS      : export OPENAI_API_KEY="sk-xxxx"
+api_key: ""
+
+# 兼容任何 OpenAI 格式的网关；使用官方接口时可改为 https://api.openai.com/v1
+base_url: "https://api.openai.com/v1"

@@ -1,0 +1,20 @@
+# ============================================================
+# 完整依赖：在最小依赖之上，追加「文本目标导航」链路所需的包
+# (run_text_goal.py / build_offline_map.py / scripts/)
+# ============================================================
+
+-r requirements-core.txt
+
+# --- 目标检测 ---
+ultralytics>=8.0          # YOLOv8
+
+# --- 场景图构建与匹配 ---
+supervision>=0.16
+omegaconf>=2.1
+scikit-image>=0.19
+scikit-fmm>=2022.1.25     # Fast Marching Method 路径规划
+faiss-cpu>=1.7
+grakel                    # 图核相似度
+open3d>=0.15
+numpy-quaternion>=2022.4
+lightglue @ git+https://github.com/cvg/LightGlue.git

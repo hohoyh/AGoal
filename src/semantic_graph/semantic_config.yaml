@@ -1,0 +1,49 @@
+# src/semantic_graph/semantic_config.yaml
+# (✅ 修复版：只保留新代码需要的配置)
+
+# ========== 1. 导航参数 ==========
+# (这些会被 semantic_navigator.py 读取)
+nav:
+  cruise_altitude_m: 15.0      # 巡航高度 (例如 10m)
+  observe_altitude_m: 10.0      # 飞抵目标点时的最终悬停高度
+  
+approach_stop_distance_m: 3.0   # 距离目标 (x,y) 多远时开始悬停
+cruise_velocity_mps: 3.0       # 巡航速度
+fine_velocity_mps: 2.0         # 接近时的速度
+
+# ========== 2. 路径规划器 ==========
+use_path_planner: true         # ✅ 推荐开启 A*
+planner_safety_margin_m: 2.0   # A* 路径距离障碍物至少 2 米
+planner_waypoint_stride: 6     # (A* 旧参数，保留)
+planner_replan_every: 3        # (A* 旧参数，保留)
+
+# ========== 3. LLM 指令解析器 ==========
+# (这些会被 semantic_navigator.py 读取)
+llm:
+  api_key: ""   # 留空即读取环境变量 OPENAI_API_KEY
+  base_url: "https://api.openai.com/v1"   # 兼容任何 OpenAI 格式的网关
+  
+  llm_model: "gpt-4o-mini"
+  vlm_model: "gpt-4o-mini" 
+  
+  enrich_categories:
+    - building
+    - bench
+
+# ========== 4. ✅ 修复: 重新加入 'classes' 块 ==========
+# (这对于 _parse_goal_with_llm 函数至关重要)
+# (这个列表应该与您 mapping_config.yaml 中的列表保持一致)
+classes:
+  ground:
+    - car
+    - grass
+    
+    # - person
+  mid:
+    # - traffic_light
+    # - stop_sign
+    # - bench
+    - tree
+  background:
+    - building
+    - lake

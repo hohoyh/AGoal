@@ -1,0 +1,31 @@
+# ============================================================
+# 最小依赖：只跑「图像目标导航」主线 (run_image_goal.py)
+# 推荐先装这一份，验证 pipeline 通了再装 requirements.txt
+# ============================================================
+
+# --- 基础 ---
+numpy>=1.21
+opencv-python>=4.5
+Pillow>=8.0
+PyYAML>=5.4
+tqdm
+
+# --- 可视化 / 建图 ---
+matplotlib>=3.4
+networkx>=2.6
+scipy>=1.7
+scikit-learn>=1.0
+
+# --- 深度学习 ---
+torch>=1.12
+torchvision>=0.13
+transformers>=4.20        # CLIP：目标图与观测图的节点外观相似度
+
+# --- 仿真器客户端 ---
+airsim>=1.8
+
+# --- LLM / VLM（不调用语言模型时可跳过）---
+openai>=1.0
+
+# 注意：GroundingDINO 与 SAM 不是 pip 包，需按 README 从源码安装
+# (third_party/Grounded-Segment-Anything)
