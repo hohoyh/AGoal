@@ -26,7 +26,7 @@
       <br><br>
       找到一个深黑色大楼，左侧有白色网格状外墙的大楼，右侧是灰白色的建筑，底部有街道和黄色小车
       <br><br>
-      <img src="show/image57.png" alt="目标参考图" style="width: 100%; border-radius: 4px;">
+      <img src="show/image55.png" alt="目标参考图" style="width: 100%; border-radius: 4px;">
       <br>
       <small>目标参考图</small>
     </td>
