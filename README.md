@@ -18,8 +18,8 @@
 
 ### 导航演示
 <table>
-  <col width="25%">
-  <col width="75%">
+  <col width="15%">
+  <col width="85%">
   <tr>
     <td align="center" valign="middle">
       <strong>🎯 语言目标</strong>
