@@ -12,17 +12,20 @@
 ---
 ## 效果展示
 
+## 效果展示
+
 ### 导航演示
 <table>
-  <col width="18%">
-  <col width="82%">
   <tr>
-    <td align="center" valign="middle">
+    <td align="center" valign="middle" width="220">
       <strong>🎯 语言目标</strong>
       <br><br>
-      找到一个深黑色大楼，左侧有白色网格状外墙的大楼，右侧是灰白色的建筑，底部有街道和黄色小车
+      找到深黑色大楼：<br>
+      左侧白色网格外墙<br>
+      右侧灰白色建筑<br>
+      底部街道+黄色小车
       <br><br>
-      <img src="show/image55.png" alt="目标参考图" style="max-width: 200px; width: 100%; border-radius: 4px;">
+      <img src="show/image57.png" alt="目标参考图" width="180" style="border-radius: 4px;">
       <br>
       <small>目标参考图</small>
     </td>
@@ -39,6 +42,7 @@
 |:---:|:---:|
 | ![推理过程可视化](show/image57.png) | ![飞行轨迹](show/image56.png) |
 | 实时语义图构建与匹配评分 | 全局路径规划与动态避障 |
+
 
 ---
 
