@@ -12,11 +12,30 @@
 ---
 ## 效果展示
 
-### 成果演示
-<div align="center">
-  <img src="show/image54.GIF" alt="成果演示" style="max-width: 100%;">
-  <p>陌生场景自主导航抵达目标</p>
-</div>
+## 效果展示
+
+### 导航演示
+<table>
+  <col width="35%">
+  <col width="65%">
+  <tr>
+    <td align="center" valign="middle">
+      <strong>🎯 语言目标</strong>
+      <br><br>
+      找到一个深黑色大楼，左侧有白色网格状外墙的大楼，右侧是灰白色的建筑，底部有街道和黄色小车
+      <br><br>
+      <img src="show/image55.png" alt="目标参考图" style="width: 100%; border-radius: 4px;">
+      <br>
+      <small>目标参考图</small>
+    </td>
+    <td align="center" valign="middle">
+      <img src="show/image54.GIF" alt="成果演示" style="width: 100%; border-radius: 4px;">
+      <br>
+      <small>陌生场景自主导航抵达目标</small>
+    </td>
+  </tr>
+</table>
+
 
 ### 核心能力可视化
 | 推理过程可视化 | 飞行轨迹 |
