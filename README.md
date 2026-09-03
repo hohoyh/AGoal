@@ -12,10 +12,8 @@
 ---
 ## 效果展示
 
-## 效果展示
-
 ### 导航演示
-<table>
+<table width="100%">
   <tr>
     <td align="center" valign="middle" width="220">
       <strong>🎯 语言目标</strong>
